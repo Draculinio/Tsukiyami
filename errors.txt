@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/stalker_encounter.rpy", line 3: expected statement.
+    school_stalker: "Are you ok?"
+                  ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Thu Nov 26 00:26:44 2020
