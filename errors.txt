@@ -2,7 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/wardream.rpy", line 4: Tab characters are not allowed in Ren'Py scripts.
+File "game/beggining.rpy", line 37: invalid syntax
+    $ p = renpy.input("What is your name?")
+     ^
+    
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Nov 28 10:42:43 2020
+Sat Nov 28 11:15:37 2020

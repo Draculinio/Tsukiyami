@@ -31,4 +31,17 @@ label beggining:
 
     i "Adapt, conform and survive by knowing what's required of you or not... rebel and try to change the characters, challenge fate and face impossible odds."
 
+    define player = Character("[p]")
+
+    python:
+        p = renpy.input("What is your name?")
+        p = p.strip()
+        if not p:
+            p = "Natalia Natalia"
+
+
+
+
+
+
     return
