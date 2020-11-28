@@ -47,6 +47,5 @@ label salary_intro:
         "Breakdance":
             "[y] attempt to break dance in the small kitchen office"
             "It doesn’t work and you return to your seat, slightly scratched"
-            absu = absu + renpy.random.random(2,4)
+            $ absu = absu + renpy.random.random(2,4)
             jump workseat
-            

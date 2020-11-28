@@ -38,7 +38,7 @@ label library_encounter:
                 alphaPartner "Can’t. you. just. SHUP. UP!"
 
                 "[alphaPartner] slaps [principal] and leaves the library"
-                no_return = True
+                $ no_return = True
                 jump slap_end
 
         "Acknowledge":
@@ -52,7 +52,7 @@ label library_encounter:
 
             alphaPartner "..."
 
-            no_return=True
+            $ no_return=True
 
             jump ack_end
 
@@ -95,5 +95,5 @@ label library_encounter:
             alphaPartner "But now I regret it! You are an asshole!"
 
             "[alphaPartner] slaps [principal] and leaves the library"
-            no_return = True
+            $ no_return = True
             jump slap_end

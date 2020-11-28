@@ -48,8 +48,11 @@ label rooftop:
         menu:
 
             "continue watching the sky":
+                $ time = time + 1
             "continue watching the sky":
+                $ time = time + 1
             "continue watching the sky":
+                $ time = time + 1
 
         $ sus = sus -1
 

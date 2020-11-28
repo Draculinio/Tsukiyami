@@ -14,11 +14,11 @@ label hand_report:
 
         "Floor [fake_floor_3] door [fake_door_2]" if renpy.random.random() > 0.3:
 
-            jump wrong door
+            jump wrong_door
 
         "Floor [fake_floor_2] door [fake_floor_1]" if renpy.random.random() > 0.3:
 
-            jump wrong door
+            jump wrong_door
 
         "Floor [floor_num] door [door_num]":
 
@@ -33,4 +33,3 @@ label hand_report:
         "Floor [fake_floor_2] door [fake_door_1]":
 
             jump wrong_door
-            

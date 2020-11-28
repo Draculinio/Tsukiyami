@@ -1,6 +1,7 @@
 label random_conversation:
 
-    $ random_workmate = jump expression renpy.random.choice( ["Mario", "John", "Philip"])
+    # TODO: see this
+    # $ random_workmate = jump expression renpy.random.choice( ["Mario", "John", "Philip"])
 
     y "Hey, how’s your day going?"
 
@@ -56,25 +57,25 @@ label random_conversation:
 
             random_workmate "I don’t know, the truth, right?"
 
-            y  "I’m not too sure about that..."
+            y "I’m not too sure about that..."
 
-			random_workmate "The truth I think"
+            random_workmate "The truth I think"
 
-			random_workmate "I mean, they are supposed to be the guys who make all the important calls, right"
+            random_workmate "I mean, they are supposed to be the guys who make all the important calls, right"
 
-			random_workmate "You’d think they want to know all the stuff, bad or good, right?"
+            random_workmate "You’d think they want to know all the stuff, bad or good, right?"
 
-			y "Sounds about right, but I kinda don’t want to let them know of all the shit some of the people here pull"
+            y "Sounds about right, but I kinda don’t want to let them know of all the shit some of the people here pull"
 
-			random_workmate "Well, you can show the data, there no need to tell them that the lazy guy in accounting is trying to pick up the receptionist all the time."
+            random_workmate "Well, you can show the data, there no need to tell them that the lazy guy in accounting is trying to pick up the receptionist all the time."
 
-			y "what"
+            y "what"
 
-			random_workmate "C’mon don’t play fool with me, we see that every other day"
+            random_workmate "C’mon don’t play fool with me, we see that every other day"
 
-			y "eehmm, that’s weird, I don’t remember that…"
+            y "eehmm, that’s weird, I don’t remember that…"
 
-			random_workmate "We talked about this literally yesterday! Are you okay in the head?"
+            random_workmate "We talked about this literally yesterday! Are you okay in the head?"
 
     random_workmate "Anyways, gotta get back to appearing as if I am working, so shush"
 

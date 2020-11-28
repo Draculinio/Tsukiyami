@@ -1,6 +1,7 @@
 label workseat:
 
-    $ random_workm = jump expression renpy.random.choice(["Pepe","Martin","Roberto"]) #?
+    #TODO: see this.
+    #$ random_workm = jump expression renpy.random.choice(["Pepe","Martin","Roberto"]) #?
 
     #transition workseat
 
@@ -26,7 +27,7 @@ label workseat:
                     y "(I feel like I have something more urgent to do…)"
                 $ time = time + 1
 
-            "Talk with [random_workm]" if time < max_time / 2":
+            "Talk with [random_workm]" if time < (max_time / 2):
 
                 $time = time + 1
                 if not rumour_heard:

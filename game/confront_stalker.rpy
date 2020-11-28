@@ -22,7 +22,7 @@ label confront_stalker:
 
             office_stalker "not this shit again..."
 
-            office_stalker "listen, I don’t do this usually but why don’t you start over and try again?":
+            office_stalker "listen, I don’t do this usually but why don’t you start over and try again?"
 
             if renpy.random.random() > 0.2:
 

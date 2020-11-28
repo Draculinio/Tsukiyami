@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/stalker_encounter.rpy", line 3: expected statement.
-    school_stalker: "Are you ok?"
-                  ^
+File "game/workseat.rpy", line 3: invalid syntax
+    random_workm = jump expression renpy.random.choice(["Pepe","Martin","Roberto"])
+                                  ^
+    
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Nov 26 00:26:44 2020
+Sat Nov 28 10:29:35 2020

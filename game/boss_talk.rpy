@@ -31,17 +31,18 @@ label boss_talk:
 
             boss "Great, remember to hand the report over directly to [office_stalker], as they have requested it be delivered ASAP"
 
-        "*Knock knock*"
+    "*Knock knock*"
 
-        office_stalker "Hello, can we come in?"
+    office_stalker "Hello, can we come in?"
 
-        boss "Yes, we’ve just finished."
+    boss "Yes, we’ve just finished."
 
-        boss "[y] here just volunteered to finish the report and will deliver it to you as soon as he’s finished it today"
+    boss "[y] here just volunteered to finish the report and will deliver it to you as soon as he’s finished it today"
 
-        office_stalker "Great, I have to stay all night here today so I’ll be expecting you to deliver it personally to me, no matter how late you finish it"
+    office_stalker "Great, I have to stay all night here today so I’ll be expecting you to deliver it personally to me, no matter how late you finish it"
 
-        office_stalker "Remember, my office is on the [floor_num] floor, door number [door_num]"
+    office_stalker "Remember, my office is on the [floor_num] floor, door number [door_num]"
 
-        $ special_report = True
-        jump workseat
+    $ special_report = True
+
+    jump workseat

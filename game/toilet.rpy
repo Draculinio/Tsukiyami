@@ -2,13 +2,13 @@ label toilet:
 
     y "(Time for a wee-wee)"
 
-	"~grr~"
+    "~grr~"
 
-	y "huh?"
+    y "huh?"
 
-	"~rumble rumble~"
+    "~rumble rumble~"
 
-	y "What is this ignominious sound coming from my belly!"
+    y "What is this ignominious sound coming from my belly!"
 
     menu:
 
@@ -19,7 +19,7 @@ label toilet:
 
         "NEED TO SHIT" if renpy.random.random()>0.3:
 
-            y: "(Well if it isn’t the old borborygmus, damn I really need to go)"
+            y "(Well if it isn’t the old borborygmus, damn I really need to go)"
 
             "..."
 
