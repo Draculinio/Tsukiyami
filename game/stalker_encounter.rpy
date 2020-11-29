@@ -8,12 +8,13 @@ label stalker_encounter:
             $sus = sus + 2
             "disregarding all worries [principal] continues to break dance on the corridor floor"
             "The [school_stalker] forcefully takes [principal] to the nurse’s office"
-            jump janitor_carry_nurse
+            jump stalker_carry_nurse
 
         "I don't think so":
             principal "I don’t feel so well…"
             school_stalker "You must be sick, let me take you to the nurses office"
-            jump janitor_carry_nurse
+            jump stalker_carry_nurse
+
         "Run away" if intro <5:
             $tmp = renpy.random.random()
             if tmp>0.5 and tmp < 0.8:

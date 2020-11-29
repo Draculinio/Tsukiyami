@@ -1,11 +1,6 @@
 label beggining:
 
-
     scene bg room #background
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
 
     show  mirror #shows a character sprite
     i "A mirror, another mirror, another house."
@@ -26,10 +21,10 @@ label beggining:
 
     i "I am alive now, with the express purpose to run away.\nIn absolute freedom but also perpetual punishment…"
 
+    hide mirror
 
-    show inthedark
-
-    i "Adapt, conform and survive by knowing what's required of you or not... rebel and try to change the characters, challenge fate and face impossible odds."
+#    show inthedark
+#    i "Adapt, conform and survive by knowing what's required of you or not... rebel and try to change the characters, challenge fate and face impossible odds."
 
     define player = Character("[p]")
 
@@ -38,10 +33,4 @@ label beggining:
         p = p.strip()
         if not p:
             p = "Natalia Natalia"
-
-
-
-
-
-
     return

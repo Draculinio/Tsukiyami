@@ -1,10 +1,12 @@
 label corridor_encounter:
 
+    scene schoolcorridor2
+
     "..."
 
     school_stalker "Hello kid, you seem lost, do you need a hand? Are you not supposed to be in your classroom right now?"
 
-    "The [school_stalker ] stares at [x] very intensely"
+    "The [school_stalker] stares at [principal] very intensely"
 
     principal "Ah! eh-eh- (I got busted, dammit! This guy is very tall and intimidating)"
 
@@ -18,4 +20,4 @@ label corridor_encounter:
 
     "The [school_stalker] somewhat forcefully walks [principal] to the nurse’s office"
 
-    jump janitor_carry_nurse
+    jump stalker_carry_nurse

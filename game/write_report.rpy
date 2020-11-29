@@ -1,6 +1,7 @@
 label write_report:
 
-    #choose nice words
+    scene officewritereport
+    with fade
 
     y "(Okay, gotta start this stupid report)"
 
@@ -38,7 +39,7 @@ label write_report:
 
         y "Okay, this looks done"
 
-        y "Now I need to hand it to [office_stalker]"
+        y "Now I need to hand it to [offi_stalker]"
 
         y "Now, where did I have to take this?"
 
@@ -47,4 +48,3 @@ label write_report:
     else:
 
         jump workseat
-        

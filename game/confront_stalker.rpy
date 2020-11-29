@@ -1,10 +1,11 @@
 label confront_stalker:
 
     #transition to executive office
+    scene officeoffice1
 
     "..."
 
-    "[office_stalker] goes over the printed report"
+    "[offi_stalker] goes over the printed report"
 
     office_stalker "Normal… as usual"
 
@@ -41,7 +42,7 @@ label confront_stalker:
 
             office_stalker "Ok, then"
 
-            "[office_stalker] looks through the window towards the moon"
+            "[offi_stalker] looks through the window towards the moon"
 
             y "Huh..."
 

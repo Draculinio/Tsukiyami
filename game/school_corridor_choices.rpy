@@ -1,4 +1,7 @@
 label school_corridor_choices:
+
+    scene schoolcorridor1
+
     menu:
         "...":
             $intro = intro +1

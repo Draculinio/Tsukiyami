@@ -3,23 +3,21 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-
-
 define e = Character("Eileen")
 define i = Character("Impostor")
 define principal = Character("[char_name]")
 define alphaPartner = Character("Alpha Partner")
-define bravo = Character("Bravo Classmate")
-define charlie = Character ("Charlie Classmate")
-define school_stalker = Character("[stalker]")
+define bravo = Character("classmate")
+define charlie = Character ("Another classmate")
 define nurse = Character("Nurse")
 define teacher = Character("Teacher")
 define librarian = Character("Librarian")
 define y = Character("[char_name]") #principal in Salary Hell stage
-define bravo_workmate = Character("Bravo Workmate")
+define bravo_workmate = Character("Workmate")
 define boss = Character("Boss")
-define office_stalker = Character("Office Stalker")
-define random_workmate = Character("Random Workmate")
+define school_stalker = Character("[sch_stalker]")
+define office_stalker = Character("[offi_stalker]")
+define random_workmate = Character("[random_workm]")
 # The game starts here.
 
 label start:
@@ -33,12 +31,12 @@ label start:
     $ no_return = False
     $ flag_school2university = False
     $ flag_breakdance = False
-    $ school_stalker = renpy.random.choice(['janitor', 'teacher', 'pe teacher', 'counsellor'])
+    $ sch_stalker = renpy.random.choice(['Janitor', 'Teacher', 'PE Teacher', 'Counsellor'])
     $ char_name = random.choice(['Yui','Akari','Hana','Mei','Ema','Sakura','Aoi','Honoka','Himari','Koharu',
     'Haruto','Yuuto','Souta','Minato','Haruki','Riku','Kouki','Yuito','Hinata','Sousuke'])
 
-    call beggining
-    call schoolHell
+    # call beggining
+    call school_hell
     call act1schoolClassroom
 
     $ introversion = 0

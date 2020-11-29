@@ -1,5 +1,7 @@
 label classroom:
-    #transition classroom
+
+    scene schoolclassroom2
+
     "An hour passes"
     $ time = time +1
     if time > 8:

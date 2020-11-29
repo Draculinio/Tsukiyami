@@ -1,5 +1,6 @@
 label wardream:
 
+    scene wardream
     # show trench
     # sound artillery
     $ flag_wardream = true

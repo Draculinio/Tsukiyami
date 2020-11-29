@@ -1,7 +1,8 @@
 label random_conversation:
 
-    # TODO: see this
-    # $ random_workmate = jump expression renpy.random.choice( ["Mario", "John", "Philip"])
+    scene officeworkseat2
+
+    $ random_workm = renpy.random.choice( ["Mario", "John", "Philip"])
 
     y "Hey, how’s your day going?"
 
@@ -25,7 +26,7 @@ label random_conversation:
 
         y "Thanks. As I was saying, unless I screw up big time they won’t give a rats’ ass about me"
 
-        random_workmate "Well, yeah but the rumour has it that some people who’ve gotten on [office_stalker] bad side get fired and the toilet’s got a whole bookload of horror stories"
+        random_workmate "Well, yeah but the rumour has it that some people who’ve gotten on [offi_stalker] bad side get fired and the toilet’s got a whole bookload of horror stories"
 
         $flag_toilet = True
 

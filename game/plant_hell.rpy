@@ -1,6 +1,9 @@
 label plant_hell:
 
     # some dark veiny bg?
+    scene planthell
+    with fade
+
     "...ever expanding..."
 
     "slowly, towards the bright"

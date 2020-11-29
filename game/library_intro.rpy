@@ -1,6 +1,6 @@
 label library_intro:
 
-    #transition library
+    scene schoollibrary1
 
     librarian "The Librarian silently stares at [principal]"
 

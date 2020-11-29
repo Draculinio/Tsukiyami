@@ -1,4 +1,7 @@
 label ack_end:
+
+    scene schoollibrary1
+
     principal "... ufff"
 
     principal "Well, that was out of character for me."

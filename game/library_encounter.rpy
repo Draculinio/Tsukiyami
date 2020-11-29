@@ -1,5 +1,7 @@
 label library_encounter:
 
+    scene schoollibrary2
+
     principal "Oh, hi"
 
     alphaPartner "oh shit-"
@@ -21,14 +23,27 @@ label library_encounter:
             jump slap_end
 
         "Lie":
-            if renpy.random.random() > 0.8 - (inteligence/10):
+
+            if renpy.random.random() > 0.8 - (inteligence / 10):
+
                 principal "Listen, I know you are angry but I didn’t have anything to do with whatever is being going on"
 
                 principal "I thought we were on good terms is all and I really just wanted to be closer to you."
 
                 alphaPartner "..."
-                #where?
+
+                alphaPartner "GET"
+
+                alphaPartner "OUT"
+
+                alphaPartner "OF"
+
+                alphaPartner "MY SIGHT"
+
+                jump slap_end
+
             else:
+
                 principal "...that was probably someone else, you got this all wrong!"
 
                 principal "I am a victim too"
@@ -38,10 +53,13 @@ label library_encounter:
                 alphaPartner "Can’t. you. just. SHUP. UP!"
 
                 "[alphaPartner] slaps [principal] and leaves the library"
+
                 $ no_return = True
+
                 jump slap_end
 
         "Acknowledge":
+
             principal "Listen, I know you are angry and you have all the right to be"
 
             principal "I am terribly sorry for the stress I’ve caused you"
@@ -52,7 +70,7 @@ label library_encounter:
 
             alphaPartner "..."
 
-            $ no_return=True
+            $ no_return = True
 
             jump ack_end
 
@@ -61,7 +79,7 @@ label library_encounter:
 
             "[principal] walks backward and leaves the library"
 
-            $sys = sys +1
+            $ sus += 1
 
             jump school_corridor_choices
 
@@ -95,5 +113,7 @@ label library_encounter:
             alphaPartner "But now I regret it! You are an asshole!"
 
             "[alphaPartner] slaps [principal] and leaves the library"
+
             $ no_return = True
+
             jump slap_end

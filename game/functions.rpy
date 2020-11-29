@@ -7,6 +7,7 @@ init python:
             return scrambling[emotion](text)
         else:
             return scrambling[emotion](text,2)
+
     def change_vowels(text):
         final_string=''
         vowels = 'aeiouAEIOU'

@@ -1,4 +1,7 @@
 label leave_classroom:
+
+    scene schoolcorridor2
+
     bravo "Hey, I am talking to you, don’t just go away when I’am talking to you"
 
     principal "..."
@@ -22,8 +25,7 @@ label leave_classroom:
     menu:
 
         "...":
-
-            $intro = intro + 1
+            $ intro += 1
             jump corridor_encounter
 
         "Go back":
@@ -35,7 +37,7 @@ label leave_classroom:
 
         "Go west":
             "[principal] enters a door"
-            if renpy.random.random()>0.75:
+            if renpy.random.random() > 0.75:
                 jump library_intro
             else:
                 jump corridor_encounter
