@@ -35,25 +35,24 @@ label start:
     $ char_name = random.choice(['Yui','Akari','Hana','Mei','Ema','Sakura','Aoi','Honoka','Himari','Koharu',
     'Haruto','Yuuto','Souta','Minato','Haruki','Riku','Kouki','Yuito','Hinata','Sousuke'])
 
-    # call beggining
+    call beggining
     call school_hell
-    call act1schoolClassroom
+    # call act1schoolClassroom
 
-    $ introversion = 0
-    $ text = select_scramble("Hola mundo",introversion)
-    principal "[text]"
-    $ introversion = 1
-    $ text = select_scramble("Que tal te va",introversion)
-    principal "[text]"
-    $introversion = 2
-    $ text = select_scramble("Mirror",introversion)
-    principal "[text]"
-    $introversion = 3
-    $ text = select_scramble("binary thing hola mundo che",introversion)
-    principal "[text]"
-    $introversion = 4
-    $ text = select_scramble("pero que cosa loca",introversion)
-    principal "[text]"
-    # This ends the game.
+    # $ introversion = 0
+    # $ text = select_scramble("Hola mundo",introversion)
+    # principal "[text]"
+    # $ introversion = 1
+    # $ text = select_scramble("Que tal te va",introversion)
+    # principal "[text]"
+    # $introversion = 2
+    # $ text = select_scramble("Mirror",introversion)
+    # principal "[text]"
+    # $introversion = 3
+    # $ text = select_scramble("binary thing hola mundo che",introversion)
+    # principal "[text]"
+    # $introversion = 4
+    # $ text = select_scramble("pero que cosa loca",introversion)
+    # principal "[text]"
 
     return
