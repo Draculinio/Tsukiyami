@@ -1,6 +1,7 @@
 label boss_talk:
 
     #some boring chat containing info on stalker
+    scene officeoffice2
 
     boss "Now, as you know, we will be delaying the C77 project to include more overall testing but I am concerned that, as we mentioned in our previous meetings…"
 
@@ -29,7 +30,7 @@ label boss_talk:
 
             y "Ok, boss. I’ll get on it right now."
 
-            boss "Great, remember to hand the report over directly to [office_stalker], as they have requested it be delivered ASAP"
+            boss "Great, remember to hand the report over directly to [offi_stalker], as they have requested it be delivered ASAP"
 
     "*Knock knock*"
 

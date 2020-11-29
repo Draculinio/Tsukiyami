@@ -1,6 +1,8 @@
 label wrong_door:
 
-    $time = time + 1
+    scene officeoffice2
+
+    $ time = time + 1
 
     #transition to office
 
@@ -30,6 +32,6 @@ label wrong_door:
 
         office_stalker "My office, now"
 
-        "[office_stalker] shows the way"
+        "[offi_stalker] shows the way"
 
     jump confront_stalker

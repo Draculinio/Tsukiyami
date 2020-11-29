@@ -1,5 +1,8 @@
 label act1schoolClassroom:
-    bravo "All she ever wanted to do was find [principal]."
+
+    scene schoolclassroom2
+
+    bravo "...all she ever wanted to do was find X in the equation!"
 
     principal "Heh. That was bad, as usual. Anyways, did you see yesternights stream?"
 
@@ -15,7 +18,8 @@ label act1schoolClassroom:
 
     bravo "What makes you think the class president who is a very talented, responsible individual with a bright future ahead would have any interest in you?"
 
-    bravo "scramble(...besides were you actually friends or did you just show her your boogers back in preschool?)"
+    $ scramble = select_scramble("...besides were you actually friends or did you just show her your boogers back in preschool?", 2)
+    bravo "[scramble]"
 
     menu:
         "Ignore him":

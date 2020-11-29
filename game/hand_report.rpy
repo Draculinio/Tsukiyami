@@ -1,10 +1,14 @@
 label hand_report:
 
+    scene officecorridor1
+
     $ fake_floor_1 = renpy.random.randint(1,5)
     $ fake_floor_2 = renpy.random.randint(2,8)
     $ fake_floor_3 = renpy.random.randint(1,10)
     $ fake_door_1 = renpy.random.randint(1,12)
     $ fake_door_2 = renpy.random.randint(1,12)
+
+    y "Where to now?"
 
     menu:
 
@@ -24,7 +28,7 @@ label hand_report:
 
             "*knock knock*"
 
-            y "Excuse me, is this [office_stalker] offices’?"
+            y "Excuse me, is this [offi_stalker] offices’?"
 
             office_stalker "I’m here, aren’t I?"
 

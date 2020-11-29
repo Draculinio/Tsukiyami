@@ -1,5 +1,7 @@
 label rooftop:
     #transition roof
+    scene schoolrooftop
+
     principal "There’s no-one here..."
 
     principal "Look at that moon…"
@@ -64,7 +66,7 @@ label rooftop:
 
         principal "I feel… sleepy… as if.. I could just sleep my life away..."
 
-        $ lose_condition = "Went to sleep before your time"
+        $ lose_condition = "You gave up before your time"
 
         jump game_over
 

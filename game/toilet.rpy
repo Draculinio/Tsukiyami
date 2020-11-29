@@ -1,5 +1,7 @@
 label toilet:
 
+    scene officetoilet
+
     y "(Time for a wee-wee)"
 
     "~grr~"
@@ -54,11 +56,13 @@ label toilet:
 
                         y "(Some kind of writing)"
 
-                        "The boss of engineering, he is an asshole, tried to get me fired."
+                        $ scramble = select_scramble("The boss of engineering, he is an asshole, tried to get me fired.", 0)
+                        "[scramble]"
 
                         y "(that’s old news buddy)"
 
-                        "At night [office_stalker] stands looking at the moon through the window...WEEEIRD"
+                        $ scramble = select_scramble("At night [offi_stalker] stands looking at the moon through the window...WEEEIRD", 0)
+                        "[scramble]"
 
                         y "Well, that’s an unwanted insight"
 
@@ -66,9 +70,11 @@ label toilet:
 
                         y "(more gossip)"
 
-                        "K1k$ from Marketing is $/(_)at"
+                        $ scramble = select_scramble("K1k$ from Marketing is $/(_)at", 0)
+                        "[scramble]"
 
                         y "(Well, that’s very… civil)"
 
                     y "There, stupid button, never properly reset"
-                    jump workseat #I added this
+
+                    jump workseat #I added this, cool tell it to your kids

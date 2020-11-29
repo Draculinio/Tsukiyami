@@ -1,6 +1,9 @@
-label schoolHell:
+label school_hell:
 
     alphaPartner "Hey! Hey [principal] wake up!"
+
+    scene bedroom
+    with fade
 
     "[principal] shuffles in bed"
 

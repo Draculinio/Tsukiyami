@@ -1,6 +1,8 @@
 label stalker_carry_nurse:
 
     #transition to nurses office
+    scene schoolnurses
+
     school_stalker "Hello nurse"
 
     nurse "Oh Hello, what’s going on?"
@@ -61,11 +63,10 @@ label stalker_carry_nurse:
     nurse "I mean you haven’t stopped fidgeting with your fingers ever since you came in"
 
     menu:
-        "...":
-            $ intro = intro +1
 
         "Stare through the window":
             #transition window
+            $ intro = intro +1
             jump school_teardown
 
         "Jump through the window":
