@@ -36,7 +36,7 @@ label start:
     $ alpha_name = random.choice(['Yui','Akari','Hana','Mei','Ema','Sakura','Aoi','Honoka','Himari','Koharu', 'Hinata'])
 
     call beggining from _call_beggining
-    call school_hell
+    call school_hell from _call_school_hell
     # $ sus = 1
     # $ intro = 12
     # $ text = smart_scramble("Hola mundo, yubi yubi")
