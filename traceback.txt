@@ -1,26 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/beggining.rpy", line 34, in script
-    define player = character("[p]")
-  File "game/beggining.rpy", line 34, in <module>
-    define player = character("[p]")
-NameError: name 'character' is not defined
+  File "game/script.rpy", line 39, in script call
+    call school_hell
+  File "game/school_corridor_choices.rpy", line 18, in script
+    jump library
+ScriptError: could not find label 'library'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/beggining.rpy", line 34, in script
-    define player = character("[p]")
-  File "C:\Users\User\renpy\renpy-7.3.5-sdk\renpy\ast.py", line 2108, in execute
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\User\renpy\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/beggining.rpy", line 34, in <module>
-    define player = character("[p]")
-NameError: name 'character' is not defined
+  File "game/script.rpy", line 39, in script call
+    call school_hell
+  File "game/school_corridor_choices.rpy", line 18, in script
+    jump library
+  File "E:\programs\renpy-7.3.5-sdk\renpy\ast.py", line 1697, in execute
+    rv = renpy.game.script.lookup(target)
+  File "E:\programs\renpy-7.3.5-sdk\renpy\script.py", line 898, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'library'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
- 
-Sat Nov 28 11:16:03 2020
+Tsukiyami 1.0
+Mon Nov 30 20:05:18 2020

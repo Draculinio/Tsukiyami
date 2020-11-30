@@ -62,3 +62,5 @@ label school_teardown:
         nurse "Are you feeling better?"
 
         nurse "it's time to go back to class"
+
+        jump classroom

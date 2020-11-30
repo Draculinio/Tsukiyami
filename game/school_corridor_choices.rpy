@@ -12,21 +12,23 @@ label school_corridor_choices:
                 jump classroom
 
         "Attempt to locate the library" if not no_return:
-            if renpy.random.random() > 1.5 -(inteligence/10):
+            if renpy.random.random() > 1.5 -(intelligence/10):
                 principal "!?"
                 principal "Was this door always here?"
-                jump library
+                jump library_intro
             else:
                 principal "I can’t seem to find it… Am I an idiot or something?"
                 jump classroom
 
         "Go down":
-            $ inteligence = inteligence -1
-            if inteligence < 1:
+            $ intelligence = intelligence -1
+            if intelligence < 1:
                 "[principal] trips and falls through a window"
                 principal "WAAAAAAAAAAAAAAAAAA..."
                 $ lose_condition = "Died from high velocity impact with concrete"
                 jump game_over
+            jump corridor_encounter
+
 
         "Move forward":
             jump corridor_encounter

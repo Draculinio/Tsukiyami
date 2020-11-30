@@ -18,7 +18,7 @@ label ack_end:
 
     $insight = insight + 1
 
-    if inteligence > 6:
+    if intelligence > 6:
         $ flag_school2university = True
         "And so [principal] focused on studying and got into university…"
         jump university_intro

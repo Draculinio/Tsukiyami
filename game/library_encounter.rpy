@@ -25,7 +25,7 @@ label library_encounter:
 
         "Lie":
 
-            if renpy.random.random() > 0.8 - (inteligence / 10):
+            if renpy.random.random() > 0.8 - (intelligence / 10):
 
                 principal "Listen, I know you are angry but I didn’t have anything to do with whatever is being going on"
 
