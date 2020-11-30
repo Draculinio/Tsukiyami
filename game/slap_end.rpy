@@ -12,7 +12,7 @@ label slap_end:
 
     principal "I better go somewhere where I can be alone…"
 
-    $sus += 1
+    $ sus += 3
 
     $ no_return = True
 

@@ -12,9 +12,11 @@ label leave_classroom:
 
     principal "(The class prez is sweet for me, I just know it~)"
 
-    principal "(I’ll just skip class and wander around in celebration! I bet I can find a spot in the library to sleep around for a while)"
+    $ scrambled = smart_scramble("library")
 
-    principal "(I barely do any studying so I don’t remember the last time I went there. Now, where was the library again?)"
+    principal "(I’ll just skip class and wander around in celebration! I bet I can find a spot in the [scrambled] to sleep around for a while)"
+
+    principal "(I barely do any studying so I don’t remember the last time I went there. Now, where was [scrambled] the again?)"
 
     principal "..."
 
@@ -34,6 +36,7 @@ label leave_classroom:
         "Go east":
             "[principal] walks headfirst into a window"
             principal "Ouch! I hit my nose…"
+            jump corridor_encounter
 
         "Go west":
             "[principal] enters a door"

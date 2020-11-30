@@ -3,13 +3,21 @@ label school_teardown:
     principal "..."
 
     if intro > 6:
-        principal "(look at those people outside, each with their own life, their own past, their expectations, family, commitments, jobs...)"
 
-        principal "(Each with their own strands of hair, each person grown, fed, educated and given a chance to live by others)"
+        $ scrambled = smart_scramble("people")
 
-        principal "(Each person connected to a countable, yet unconceivable number of other people)"
+        principal "(look at those [scrambled] outside, each with their own life, their own past, their expectations, family, commitments, jobs...)"
 
-        principal "(Each without a clear view of the future, attempting to claw out of the tedium of their ordinary lives...)"
+
+        $ hair = smart_scramble("own strands of hair")
+        $ chance = smart_scramble("a chance to live by others")
+        principal "(Each with their [hair], each person grown, fed, educated and given a [chance])"
+
+        $ person = smart_scramble("person")
+        principal "(Each [person] connected to a countable, yet unconceivable number of other [scrambled])"
+
+        $ scrambled = smart_scramble("to claw out of the tedium of their ordinary lives...")
+        principal "(Each without a clear view of the future, attempting [scrambled])"
 
         principal "(...or fighting to stay afloat amongst the overbearing sense of futility of their lives)"
 
@@ -19,7 +27,7 @@ label school_teardown:
 
         menu:
 
-            "I don’t want to stand out… I’ll just get a random office job...":
+            "I don’t want to stand out… I’ll just get a random desk job...":
                 $ flag_school2office = True
                 jump salary_intro
 
@@ -39,7 +47,8 @@ label school_teardown:
 
                     jump plant_hell
 
-        principal "I can’t seem to focus very far… I seem to be very tired or is something wrong with my eyes?"
+        $ scrambled = smart_scramble("is something wrong with my eyes?")
+        principal "I can’t seem to focus very far… I seem to be very tired, [scrambled]"
 
         principal "Am I missing something?"
 
@@ -47,4 +56,9 @@ label school_teardown:
 
         #close eyes efect
         jump classroom
-        
+    else:
+        principal "Those trees look really peaceful"
+
+        nurse "Are you feeling better?"
+
+        nurse "it's time to go back to class"

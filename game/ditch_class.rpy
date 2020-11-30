@@ -6,7 +6,7 @@ label ditch_class:
 
     menu:
         "...":
-            $ intro += 1
+            $ intro += 2
             principal "(I don’t know what to do!)"
             principal "(Why did I even ditch class like that?)"
             jump classroom

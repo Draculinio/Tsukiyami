@@ -13,11 +13,14 @@ label university_intro:
 
     "Looking back now… all that time…"
 
-    "I felt like someone else"
+    $ scrambled = smart_scramble("I felt like someone else.")
+
+    "[scrambled]"
 
     "But that on it’s own is not something remarkable, at least not too remarkable."
 
-    "Everybody is a project of a person, everyday consciously and unconsciously doing things and thinking things"
+    $ scrambled = smart_scramble("everyday consciously and unconsciously doing things and thinking things")
+    "Everybody is a project of a person, [scrambled]"
 
     "And in the end, it all adds up to who we are"
 
@@ -25,7 +28,8 @@ label university_intro:
 
     "In the strict sense of the word, we never ‘are’"
 
-    "We are constantly ‘being’; in flux, unable to sustain the entirety of our weight and decisions"
+    $ scrambled = smart_scramble("We are constantly ‘being’; in flux, unable to sustain the entirety of our weight and decisions")
+    "[scrambled]"
 
     "Sometimes, we change our mind, or we forget the things we like or hate"
 
@@ -33,11 +37,14 @@ label university_intro:
 
     "But even with that unbearable uncertainty about ones own identity."
 
-    "Years later, I still feel like someone is always watching me."
+    $ scrambled = smart_scramble("Years later, I still feel like someone is always watching me.")
+    "[scrambled]"
 
-    "Sometimes I get this feeling… like something crawls under my skin"
+    $ scrambled = smart_scramble("crawls under my skin")
+    "Sometimes I get this feeling… like something [scrambled]"
 
-    "At night, I get these weird dreams. Like I am… someone else."
+    $ scrambled = smart_scramble(" weird dreams. Like I am… someone else.")
+    "At night, I get these [scrambled]"
 
     "They are so vivid…"
 
@@ -45,7 +52,7 @@ label university_intro:
 
     "..."
 
-    $ flag_school2office = true
+    $ flag_school2office = True
 
     "..."
 

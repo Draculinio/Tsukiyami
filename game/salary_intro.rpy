@@ -30,7 +30,7 @@ label salary_intro:
 
     menu:
         "Ignore":
-            $ intro += 1
+            $ intro += 2
 
         "It's ok, yours?":
             bravo_workmate "Anyways sorry, I am running late for a meeting"

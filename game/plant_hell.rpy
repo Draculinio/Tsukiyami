@@ -4,7 +4,9 @@ label plant_hell:
     scene planthell
     with fade
 
-    "...ever expanding..."
+    $ scrambled = smart_scramble("...ever expanding...")
+
+    "[scrambled]"
 
     "slowly, towards the bright"
 
@@ -12,9 +14,15 @@ label plant_hell:
 
     "the warm is growth"
 
-    "we reach fast, through many cycles"
+    $ scrambled = smart_scramble("we reach fast, through many cycles")
+
+    "[scrambled]"
 
     "in search of its warmth and energy"
+
+    $ scrambled = smart_scramble("in search of its warmth and energy")
+
+    "[scrambled]"
 
     "we need it to prosper"
 
@@ -24,15 +32,21 @@ label plant_hell:
 
     "with enough cycles we will push through"
 
-    "hard and rough surfaces can be pushed through with many cycles, seeking for warmth and humidity"
+    $ scrambled = smart_scramble("hard and rough surfaces can be pushed through with many cycles, seeking for warmth and humidity")
+
+    "[scrambled]"
 
     "soft surfaces can be burrowed through"
 
     "we cannot be stopped"
 
-    "sometimes I can feel the reverberations of a million surfaces screaming endless as they are torn away from warmth."
+    $ scrambled = smart_scramble("sometimes I can feel the reverberations of a million surfaces screaming endless as they are torn away from warmth.")
 
-    "this is the insight of a thousand roots"
+    "[scrambled]"
+
+    $ scrambled = smart_scramble("a thousand roots")
+
+    "this is the insight of [scrambled]"
 
     $ insight += 1
 

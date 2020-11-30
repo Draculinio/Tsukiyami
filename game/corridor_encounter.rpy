@@ -3,14 +3,15 @@ label corridor_encounter:
     scene schoolcorridor2
 
     "..."
-
-    school_stalker "Hello kid, you seem lost, do you need a hand? Are you not supposed to be in your classroom right now?"
+    $ scrambled = smart_scramble("Are you not supposed to be in your classroom right now")
+    school_stalker "Hello kid, you seem lost, do you need a hand? [scrambled]?"
 
     "The [school_stalker] stares at [principal] very intensely"
 
     principal "Ah! eh-eh- (I got busted, dammit! This guy is very tall and intimidating)"
 
-    school_stalker "Are you not feeling well? Do I need to take you to the nurses office?"
+    $ scrambled = smart_scramble("not feeling well")
+    school_stalker "Are you [scrambled]? Do I need to take you to the nurses office?"
 
     principal "ah, y-ye-ye-yes! tha-that’s it, is it not on this floor?"
 

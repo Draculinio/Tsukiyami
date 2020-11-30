@@ -61,7 +61,8 @@ label confront_stalker:
                     jump game_over
             else:
 
-                    office_stalker "It’s time for you to leave. Please. Your intromission into our universe is very disruptive"
+                    $ scrambled = smart_scramble("Your intromission into our universe is very disruptive.")
+                    office_stalker "It’s time for you to leave. Please. [scrambled]"
 
                     y "What?"
 
@@ -69,9 +70,11 @@ label confront_stalker:
 
                     y "Huh, What?"
 
-                    office_stalker "You see [y] you under someone else's control"
+                    $ scrambled = smart_scramble("under someone else's control")
+                    office_stalker "You see [y], you are [scrambled]"
 
-                    office_stalker "Being played around for a simple demonstration of a programming contest"
+                    $ scrambled = smart_scramble("simple demonstration of a programming contest")
+                    office_stalker "Being played around for a [scrambled]"
 
                     office_stalker "Have you had your share now [player]?"
 

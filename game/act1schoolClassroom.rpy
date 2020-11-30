@@ -8,7 +8,7 @@ label act1schoolClassroom:
 
     bravo "I told you I am not like you. I don’t see those taiwanese talking heads"
 
-    principal "Tsch! They are not taiwanese! I told you, it’s the last hit in streaming fashion!"
+    principal "Tsch! They are not chinese! I told you, they are the most recent thing in streaming!"
 
     bravo "I heard the class president got angry at you, you should be careful…"
 
@@ -18,8 +18,8 @@ label act1schoolClassroom:
 
     bravo "What makes you think the class president who is a very talented, responsible individual with a bright future ahead would have any interest in you?"
 
-    $ scramble = select_scramble("...besides were you actually friends or did you just show her your boogers back in preschool?", 2)
-    bravo "[scramble]"
+    $ scrambled = select_scramble("...besides were you actually friends or did you just show her your boogers back in preschool?", 2)
+    bravo "[scrambled]"
 
     menu:
         "Ignore him":
@@ -39,13 +39,8 @@ label act1schoolClassroom:
 
     charlie "Hey Let’s go! I heard the cafeteria special is on sale today!"
 
-    bravo "In any case I just wanted to test my jokes to see if they’d work on you, the grumpiest of the class; thanks I guess."
+    $ scramble = select_scramble("to test my jokes to see if they’d work on you, the grumpiest of the class; thanks I guess.", 2)
 
-    #random exit
-    $ exit = random.randint(0,3)
-    if exit == 1:
-        jump leave_classroom
-    if exit == 2:
-        jump school_corridor_choices
-    if exit == 3:
-        jump classroom
+    bravo "In any case I just wanted [scramble]"
+
+    jump leave_classroom

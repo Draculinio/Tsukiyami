@@ -24,8 +24,6 @@ label wrong_door:
 
         "thump thump"
 
-        "Approached from behind"
-
         office_stalker "You are late."
 
         y "Sorry, I got lost on the way."

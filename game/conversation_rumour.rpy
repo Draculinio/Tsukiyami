@@ -16,7 +16,8 @@ label conversation_rumour:
 
     y "well what’s it about?"
 
-    random_workmate "Well, it seems [offi_stalker] was seen working late at night and ..."
+    $ scrambled = smart_scramble("seen working late at night")
+    random_workmate "Well, it seems [offi_stalker] was [scrambled] and ..."
 
     if renpy.random.random() > 0.5:
 

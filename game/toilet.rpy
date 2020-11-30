@@ -16,10 +16,11 @@ label toilet:
 
         "Ignore":
 
-            "This can wait, I have to continue working"
+            y "(This can wait, I have to continue working)"
+            $ intro += 1
             jump workseat
 
-        "NEED TO SHIT" if renpy.random.random()>0.3:
+        "NEED TO SHIT" if renpy.random.random() > 0.3:
 
             y "(Well if it isn’t the old borborygmus, damn I really need to go)"
 
@@ -56,13 +57,13 @@ label toilet:
 
                         y "(Some kind of writing)"
 
-                        $ scramble = select_scramble("The boss of engineering, he is an asshole, tried to get me fired.", 0)
-                        "[scramble]"
+                        $ scrambled = smart_scramble("The boss of engineering, he is an asshole, tried to get me fired.")
+                        "[scrambled]"
 
                         y "(that’s old news buddy)"
 
-                        $ scramble = select_scramble("At night [offi_stalker] stands looking at the moon through the window...WEEEIRD", 0)
-                        "[scramble]"
+                        $ scrambled = smart_scramble("At night [offi_stalker] stands looking at the moon through the window...")
+                        "[scrambled]"
 
                         y "Well, that’s an unwanted insight"
 
@@ -70,8 +71,8 @@ label toilet:
 
                         y "(more gossip)"
 
-                        $ scramble = select_scramble("K1k$ from Marketing is $/(_)at", 0)
-                        "[scramble]"
+                        $ scrambled = smart_scramble("Richard from Marketing is $/(_)at", 0)
+                        "[scrambled]"
 
                         y "(Well, that’s very… civil)"
 

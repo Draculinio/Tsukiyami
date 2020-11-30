@@ -12,9 +12,10 @@ label library_encounter:
 
     principal "Why, what did I do to you?"
 
-    alphaPartner "Why? You spread all these rumours around of us being a couple and have the nerve to ask why!?"
+    $ scrambled = smart_scramble("spread all these rumours around of us being a couple and have the nerve to ask why!??")
+    alphaPartner "Why? You [scrambled]"
 
-    librarian "*gives you a death stare*"
+    librarian "*gives [principal] a death stare*"
 
     menu:
         "...":
@@ -32,13 +33,17 @@ label library_encounter:
 
                 alphaPartner "..."
 
-                alphaPartner "GET"
+                $ scrambled = smart_scramble("GET")
+                alphaPartner "[scrambled]"
 
-                alphaPartner "OUT"
+                $ scrambled = smart_scramble("OUT")
+                alphaPartner "[scrambled]"
 
-                alphaPartner "OF"
+                $ scrambled = smart_scramble("OF")
+                alphaPartner "[scrambled]"
 
-                alphaPartner "MY SIGHT"
+                $ scrambled = smart_scramble("MY SIGHT!")
+                alphaPartner "[scrambled]"
 
                 jump slap_end
 
@@ -50,7 +55,8 @@ label library_encounter:
 
                 principal "I’ll go and find out who's behind this…"
 
-                alphaPartner "Can’t. you. just. SHUP. UP!"
+                $ scrambled = smart_scramble("Can’t. you. just. SHUP. UP!")
+                alphaPartner "[scrambled]"
 
                 "[alphaPartner] slaps [principal] and leaves the library"
 
@@ -79,36 +85,47 @@ label library_encounter:
 
             "[principal] walks backward and leaves the library"
 
-            $ sus += 1
+            $ sus += 2
 
             jump school_corridor_choices
 
         "Attempt to calm down":
             principal "Hey, hey, shhhh"
 
-            alphaPartner "DON'T."
+            $ scrambled = smart_scramble("DON'T")
+            alphaPartner "[scrambled]"
 
-            alphaPartner "YOU."
+            $ scrambled = smart_scramble("YOU")
+            alphaPartner "[scrambled]"
 
-            alphaPartner "DARE."
+            $ scrambled = smart_scramble("DARE")
+            alphaPartner "[scrambled]"
 
-            alphaPartner "SHUT."
+            $ scrambled = smart_scramble("SHUT")
+            alphaPartner "[scrambled]"
 
-            alphaPartner "ME."
+            $ scrambled = smart_scramble("ME")
+            alphaPartner "[scrambled]"
 
-            alphaPartner "UP!"
+            $ scrambled = smart_scramble("UP")
+            alphaPartner "[scrambled]"
 
             principal "Hey hey, calm down; I thought we were friends from way back! Geez!"
 
-            alphaPartner "Friends!? Just because I shared my lunch with you in preschool?"
+            $ scrambled = smart_scramble("I shared my lunch with you in preschool")
+            alphaPartner "Friends!? Just because [scrambled]?"
 
-            principal "Well, yeah, that’s not something you do for someone you don’t care"
+            $ scrambled = smart_scramble("you do for someone you don’t care")
+            principal "Well, yeah, that’s not something [scrambled]"
 
-            alphaPartner "I only did it out of shame, if I knew you would do something so sinister as to talk out of your ass I would’ve never done it!"
+            $ chance = smart_scramble("I only did it out of kindness")
+            $ scrambled = smart_scramble("to talk out of your ass I would’ve never done it!")
+            alphaPartner "[chance], if I knew you would do something so sinister as [scrambled]"
 
             principal "..."
 
-            alphaPartner "And I’ll tell you more, I only did it out of PITY"
+            $ scrambled = "I only did it out of PITY!"
+            alphaPartner "And I’ll tell you more, [scrambled]"
 
             alphaPartner "But now I regret it! You are an asshole!"
 

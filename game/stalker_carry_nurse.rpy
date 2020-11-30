@@ -7,7 +7,9 @@ label stalker_carry_nurse:
 
     nurse "Oh Hello, what’s going on?"
 
-    school_stalker "He seems somewhat confused, I found [principal] walking around, I got the sense he was lost"
+    $ chance = smart_scramble("He seems somewhat confused")
+    $ scrambled = smart_scramble("walking around, I got the sense he was lost")
+    school_stalker "[chance], I found [principal] [scrambled]"
 
     nurse "Ok, thanks [school_stalker], I’ll take care of it"
 
@@ -54,22 +56,25 @@ label stalker_carry_nurse:
 
     principal "Eh, I feel tired all of the sudden, can I go lay down now?"
 
-    nurse "Well, your temperature is not abnormal, but sure you can lay down."
+    $ scrambled = smart_scramble("your temperature is not abnormal")
+    nurse "Well, [scrambled] but sure, you can go and lay down a bit."
 
     nurse "You sure are lively for someone tired."
 
     principal "What do you mean?"
 
-    nurse "I mean you haven’t stopped fidgeting with your fingers ever since you came in"
+    $ scrambled = smart_scramble("stopped fidgeting with your fingers")
+
+    nurse "I mean you haven’t [scrambled] ever since you came in"
 
     menu:
 
-        "Stare through the window":
+        "Stare through the window and ignore her":
             #transition window
-            $ intro = intro +1
+            $ intro += 2
             jump school_teardown
 
-        "Jump through the window":
+        "Jump through the window" if intro > 5:
             $ lose_condition = "Died from high velocity impact with concrete"
             jump game_over
 

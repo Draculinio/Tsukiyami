@@ -11,7 +11,7 @@ label write_report:
 
         "Write a bunch of buzzword that don’t mean much" if intro > 3:
 
-            $ absu = absu + 3
+            $ absu = absu + renpy.random.randint(1,2)
 
             $ report_progress = report_progress + 1
 
@@ -20,6 +20,7 @@ label write_report:
         "Put the good numbers of last quarter":
 
             $ report_progress = report_progress + 3
+            $ sus += renpy.random.randint(1,3)
 
             y "(This is good)"
 
@@ -31,7 +32,7 @@ label write_report:
 
         "write a report leaving out the management mistakes":
 
-            $ report_progress = report_progress + 2
+            $ report_progress = report_progress + renpy.random.randint(1,2)
 
             y "(This is ok)"
 

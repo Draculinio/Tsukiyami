@@ -13,6 +13,11 @@ label classroom:
         principal "(I feel like I’ve been here for an eternity.)"
     if time > 15:
         principal "I can’t stand it anymore!"
+    if time > 20:
+        $ scrambled = smart_scramble("I. HAVE. TO. GET. OUT. NOW.")
+        principal "[scrambled]"
+        $ lose_condition = smart_scramble("You went insane from an eternity of slacking off.")
+        jump game_over
 
     menu:
         "Attempt to ditch class":
@@ -29,7 +34,8 @@ label classroom:
                 $ sus = sus -1
             if intelligence > 6:
                 $flag_school2university = True
-                jump university_intro
+
+            jump classroom 
 
         "Initiate photosynthesis" if absu > 8:
             "[principal] stares straight through the window, his eyes fixated on the sun"

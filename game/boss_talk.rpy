@@ -11,13 +11,14 @@ label boss_talk:
 
     y "Wasn’t this initiative started by the higher ups?"
 
-    boss "Well, yes, but we are the ones carrying it on. I’d like for you to complete the report with full evaluation of its current development"
+    $ scrambled = smart_scramble("complete the report with full evaluation of its current development")
+    boss "Well, yes, but we are the ones carrying it on. I’d like for you to [scrambled]"
 
     menu:
 
         "Wouldn’t you have a better time gathering the information?":
 
-            $ intro = intro - 1
+            $ intro = intro - renpy.random.randint(1,3)
 
             y "but wouldn’t you have a better time gathering the information?"
 

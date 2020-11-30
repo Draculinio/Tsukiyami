@@ -24,3 +24,5 @@ label school_hell:
     "Alpha Partner leaves the room\nDoor slam sound"
 
     principal "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+
+    jump act1schoolClassroom

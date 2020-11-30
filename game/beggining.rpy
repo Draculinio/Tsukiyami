@@ -1,7 +1,5 @@
 label beggining:
 
-    scene bg room #background
-
     show  mirror #shows a character sprite
     i "A mirror, another mirror, another house."
 
